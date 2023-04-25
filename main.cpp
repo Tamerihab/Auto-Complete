@@ -1,8 +1,10 @@
 #include<iostream>
-#include"trie.h"
+
 #include<string>
+
 #include<fstream>
 
+#include"trie.h"
 
 void split_string(trie &trie,std::string& str, std::vector<std::string>& res) {
 
@@ -38,7 +40,6 @@ bool is_space(std::string& str) { //checks if there is a space in the entered st
 	}
 	return false;
 }
-
 /*--------------------------------------------------------------------
 	 Checks if there is a space in the entered string
 	 Precondition:  string is a valid string.
