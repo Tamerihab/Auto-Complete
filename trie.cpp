@@ -1,11 +1,5 @@
 #include"trie.h"
 
-#include<cstring>
-
-#include<vector>
-
-#include<fstream>
-
 trie::trie():count(0) {
 	root = new Node('\0');
 }
