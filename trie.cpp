@@ -45,3 +45,23 @@ bool trie::search(std::string str)
 }
 
 //-------------------------------------------------------------------
+
+bool trie::remove(std::string str)
+{
+
+	Node *cur = root;
+
+	if (!cur)
+		return false;
+
+	for (int index = 0; index < str.length(); index++)
+	{
+		if (!cur->child[str[index]])
+			return false;
+		cur = cur->child[str[index]];
+	}
+	cur->is_leaf = false;
+	return true;
+}
+
+//-------------------------------------------------------------------
