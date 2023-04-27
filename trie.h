@@ -151,5 +151,13 @@ public:
 	Postcondition: all words with the same prefix as the string has been returned,
 	provided string is valid..
 	--------------------------------------------------------------------*/
+
+	bool remove(std::string str);
+	/*--------------------------------------------------------------------
+	Removes the string from the trie
+	Precondition:  string is a valid string.
+	Postcondition: string has been removed from trie,
+	provided string is valid..
+	--------------------------------------------------------------------*/
 };
 
